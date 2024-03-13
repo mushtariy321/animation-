@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.ima{
+    width: 100%;
+    height: 100vh;
+}
+.ima>img{ 
+    width: 100%;
+    height: 100%;
+}
+.sun{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: -1;
+    position: absolute;
+    left: 40%;
+    top: 45%;    
+    animation: sun 10s alternate infinite ease-in-out;
+
+}
+@keyframes sun{
+    0%{
+        top: 45%;
+        background-color: rgb(255, 140, 0);
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        top: -120px;
+        background-color:rgb(246, 255, 0);
+    }
+}
+.cloud>img{
+    width: 250px;
+    position: absolute;
+    bottom: 55%;
+    animation: cloud1 12s alternate infinite;
+}
+
+@keyframes cloud1{
+    0%{
+        left: 0;
+    } 
+    100%{
+        left:100% ;
+    }
+}
+.cloud_right> img{
+    width: 250px;
+    display: flex;
+    position: absolute;
+    bottom: 55%;
+    animation:cloud2 12s alternate infinite ;
+}
+@keyframes cloud2{
+    0%{
+       right: 0;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.div>img{
+    width: 200px;
+    display: flex;
+    position: absolute;
+    bottom: 43%;
+    animation:cloud3 14s alternate infinite     ;
+}
+@keyframes cloud3{
+    0%{
+       right: 0;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.div>img{
+    width: 200px;
+    display: flex;
+    position: absolute;
+    bottom: 43%;
+    animation:cloud3 13s alternate infinite     ;
+}
+@keyframes cloud3{
+    0%{
+       right: 0;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.div1>img{
+    width: 200px;
+    display: flex;
+    position: absolute;
+    bottom: 43%;
+    animation:cloud4 12s alternate infinite;
+}
+@keyframes cloud4{
+    0%{
+       left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
